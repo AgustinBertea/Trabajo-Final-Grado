@@ -1,0 +1,28 @@
+{
+  "short_name": "TFG",
+  "name": "Trabajo final de grado",
+  "description": "Trabajo final de grado de Agustin Bertea para Ingenieria de Sofware en la Universidad Siglo 21",
+  "orientation": "portrait",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffa500",
+  "background_color": "#212529"
+}

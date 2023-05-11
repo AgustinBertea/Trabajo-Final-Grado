@@ -1,0 +1,10 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: graph-service
+  data:
+    neo4j:
+      uri: bolt://localhost
+      username: neo4j
+      password: password

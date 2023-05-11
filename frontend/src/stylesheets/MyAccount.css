@@ -1,0 +1,27 @@
+.my-account-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+
+.my-account-div {
+    background-color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.my-account-button {
+    padding: 0.4em 0.4em !important;
+}
+
+.hide{
+    display: none;
+}
+
+.my-account-changed {
+    display: flex;
+    justify-content: center;
+}

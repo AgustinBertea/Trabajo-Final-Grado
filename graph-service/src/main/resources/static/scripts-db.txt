@@ -1,0 +1,378 @@
+MERGE (:UBICACION {calle:'Avenida Colón', numero:199, latitud:-31.4130138, longitud:-64.1856662});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:200, latitud:-31.41282048, longitud:-64.1856170});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:102, latitud:-31.41315038, longitud:-64.18444310});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:101, latitud:-31.41336018, longitud:-64.1844894});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:100, latitud:-31.4132216, longitud:-64.1842439});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:99, latitud:-31.4134092, longitud:-64.1842554});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:2, latitud:-31.41358372, longitud:-64.1830929});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:1, latitud:-31.4137523, longitud:-64.1831339});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:201, latitud:-31.4129200, longitud:-64.1859307});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:202, latitud:-31.4127064, longitud:-64.1858888});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:299, latitud:-31.4125766, longitud:-64.1870519});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:300, latitud:-31.4123694, longitud:-64.1870361});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:302, latitud:-31.41233834, longitud:-64.1872558});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:301, latitud:-31.4124958, longitud:-64.1872689});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:400, latitud:-31.4119952, longitud:-64.1883367});
+MERGE (:UBICACION {calle:'Avenida Colón', numero:399, latitud:-31.4121809, longitud:-64.1883609});
+
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:399}), (b:UBICACION{calle:"Avenida Colón",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:301}), (b:UBICACION{calle:"Avenida Colón",numero:302}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:299}), (b:UBICACION{calle:"Avenida Colón",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:201}), (b:UBICACION{calle:"Avenida Colón",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:199}), (b:UBICACION{calle:"Avenida Colón",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:101}), (b:UBICACION{calle:"Avenida Colón",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:99}), (b:UBICACION{calle:"Avenida Colón",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:1}), (b:UBICACION{calle:"Avenida Colón",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida Colón",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:1}), (b:UBICACION{calle:"Avenida Colón",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:2}), (b:UBICACION{calle:"Avenida Colón",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:102}), (b:UBICACION{calle:"Avenida Colón",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:101}), (b:UBICACION{calle:"Avenida Colón",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:202}), (b:UBICACION{calle:"Avenida Colón",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:201}), (b:UBICACION{calle:"Avenida Colón",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:302}), (b:UBICACION{calle:"Avenida Colón",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:301}), (b:UBICACION{calle:"Avenida Colón",numero:399}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'Santa Rosa', numero:1, latitud:-31.4126366, longitud:-64.1827308});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:2, latitud:-31.4125445, longitud:-64.1826331});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:99, latitud:-31.4122934, longitud:-64.1838522});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:100, latitud:-31.4121824, longitud:-64.1837841});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:101, latitud:-31.4122482, longitud:-64.1840507});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:102, latitud:-31.4121190, longitud:-64.1840179});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:199, latitud:-31.4119019, longitud:-64.1852275});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:200, latitud:-31.4117475, longitud:-64.1851947});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:201, latitud:-31.4118195, longitud:-64.1854903});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:202, latitud:-31.4116824, longitud:-64.1854350});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:299, latitud:-31.4115144, longitud:-64.1865829});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:300, latitud:-31.4113455, longitud:-64.1865823});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:301, latitud:-31.4113963, longitud:-64.1868815});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:302, latitud:-31.4112674, longitud:-64.1868221});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:399, latitud:-31.4110815, longitud:-64.1879735});
+MERGE (:UBICACION {calle:'Santa Rosa', numero:400, latitud:-31.4109242, longitud:-64.1879030});
+
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:399}), (b:UBICACION{calle:"Santa Rosa",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:301}), (b:UBICACION{calle:"Santa Rosa",numero:302}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:299}), (b:UBICACION{calle:"Santa Rosa",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:201}), (b:UBICACION{calle:"Santa Rosa",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:199}), (b:UBICACION{calle:"Santa Rosa",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:101}), (b:UBICACION{calle:"Santa Rosa",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:99}), (b:UBICACION{calle:"Santa Rosa",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:1}), (b:UBICACION{calle:"Santa Rosa",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Santa Rosa",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:1}), (b:UBICACION{calle:"Santa Rosa",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:2}), (b:UBICACION{calle:"Santa Rosa",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:101}), (b:UBICACION{calle:"Santa Rosa",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:102}), (b:UBICACION{calle:"Santa Rosa",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:201}), (b:UBICACION{calle:"Santa Rosa",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:202}), (b:UBICACION{calle:"Santa Rosa",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:301}), (b:UBICACION{calle:"Santa Rosa",numero:399}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:302}), (b:UBICACION{calle:"Santa Rosa",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'9 de Julio', numero:1, latitud:-31.4148458, longitud:-64.1837830});
+MERGE (:UBICACION {calle:'9 de Julio', numero:2, latitud:-31.4147358, longitud:-64.1836514});
+MERGE (:UBICACION {calle:'9 de Julio', numero:99, latitud:-31.4145536, longitud:-64.1847569});
+MERGE (:UBICACION {calle:'9 de Julio', numero:100, latitud:-31.4144053, longitud:-64.1847183});
+MERGE (:UBICACION {calle:'9 de Julio', numero:101, latitud:-31.4144893, longitud:-64.1849712});
+MERGE (:UBICACION {calle:'9 de Julio', numero:102, latitud:-31.4143577, longitud:-64.1849446});
+MERGE (:UBICACION {calle:'9 de Julio', numero:199, latitud:-31.4141238, longitud:-64.1861889});
+MERGE (:UBICACION {calle:'9 de Julio', numero:200, latitud:-31.4140031, longitud:-64.1861207});
+MERGE (:UBICACION {calle:'9 de Julio', numero:201, latitud:-31.4141052, longitud:-64.1864007});
+MERGE (:UBICACION {calle:'9 de Julio', numero:202, latitud:-31.4139428, longitud:-64.1863351});
+MERGE (:UBICACION {calle:'9 de Julio', numero:299, latitud:-31.4137566, longitud:-64.1875557});
+MERGE (:UBICACION {calle:'9 de Julio', numero:300, latitud:-31.4136261, longitud:-64.1875271});
+MERGE (:UBICACION {calle:'9 de Julio', numero:301, latitud:-31.4137677, longitud:-64.1877612});
+MERGE (:UBICACION {calle:'9 de Julio', numero:302, latitud:-31.4135546, longitud:-64.1876920});
+MERGE (:UBICACION {calle:'9 de Julio', numero:399, latitud:-31.4134131, longitud:-64.1889549});
+MERGE (:UBICACION {calle:'9 de Julio', numero:400, latitud:-31.4132240, longitud:-64.1888928});
+
+MATCH (a:UBICACION{calle:"9 de Julio",numero:1}), (b:UBICACION{calle:"9 de Julio",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:99}), (b:UBICACION{calle:"9 de Julio",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:101}), (b:UBICACION{calle:"9 de Julio",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:199}), (b:UBICACION{calle:"9 de Julio",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:201}), (b:UBICACION{calle:"9 de Julio",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:299}), (b:UBICACION{calle:"9 de Julio",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:301}), (b:UBICACION{calle:"9 de Julio",numero:302}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:399}), (b:UBICACION{calle:"9 de Julio",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"9 de Julio",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"9 de Julio",numero:1}), (b:UBICACION{calle:"9 de Julio",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:2}), (b:UBICACION{calle:"9 de Julio",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:101}), (b:UBICACION{calle:"9 de Julio",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:102}), (b:UBICACION{calle:"9 de Julio",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:201}), (b:UBICACION{calle:"9 de Julio",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:202}), (b:UBICACION{calle:"9 de Julio",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:301}), (b:UBICACION{calle:"9 de Julio",numero:399}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:302}), (b:UBICACION{calle:"9 de Julio",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'Deán Funes', numero:1, latitud:-31.4160222, longitud:-64.1841556});
+MERGE (:UBICACION {calle:'Deán Funes', numero:2, latitud:-31.4158864, longitud:-64.1841478});
+MERGE (:UBICACION {calle:'Deán Funes', numero:99, latitud:-31.4156940, longitud:-64.1852542});
+MERGE (:UBICACION {calle:'Deán Funes', numero:100, latitud:-31.4155741, longitud:-64.1851776});
+MERGE (:UBICACION {calle:'Deán Funes', numero:101, latitud:-31.4156268, longitud:-64.1855202});
+MERGE (:UBICACION {calle:'Deán Funes', numero:102, latitud:-31.4155142, longitud:-64.1854287});
+MERGE (:UBICACION {calle:'Deán Funes', numero:200, latitud:-31.4151783, longitud:-64.1865819});
+MERGE (:UBICACION {calle:'Deán Funes', numero:199, latitud:-31.4153163, longitud:-64.1866244});
+MERGE (:UBICACION {calle:'Deán Funes', numero:201, latitud:-31.4151910, longitud:-64.1869436});
+MERGE (:UBICACION {calle:'Deán Funes', numero:202, latitud:-31.4150657, longitud:-64.1868606});
+MERGE (:UBICACION {calle:'Deán Funes', numero:299, latitud:-31.4148787, longitud:-64.1880755});
+MERGE (:UBICACION {calle:'Deán Funes', numero:300, latitud:-31.4147334, longitud:-64.1880095});
+MERGE (:UBICACION {calle:'Deán Funes', numero:301, latitud:-31.4148188, longitud:-64.1882669});
+MERGE (:UBICACION {calle:'Deán Funes', numero:302, latitud:-31.4146953, longitud:-64.1882052});
+MERGE (:UBICACION {calle:'Deán Funes', numero:399, latitud:-31.4144992, longitud:-64.1894159});
+MERGE (:UBICACION {calle:'Deán Funes', numero:400, latitud:-31.4143539, longitud:-64.1893584});
+
+MATCH (a:UBICACION{calle:"Deán Funes",numero:1}), (b:UBICACION{calle:"Deán Funes",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:99}), (b:UBICACION{calle:"Deán Funes",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:101}), (b:UBICACION{calle:"Deán Funes",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:199}), (b:UBICACION{calle:"Deán Funes",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:201}), (b:UBICACION{calle:"Deán Funes",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:299}), (b:UBICACION{calle:"Deán Funes",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:301}), (b:UBICACION{calle:"Deán Funes",numero:302}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:399}), (b:UBICACION{calle:"Deán Funes",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Deán Funes",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Deán Funes",numero:1}), (b:UBICACION{calle:"Deán Funes",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:2}), (b:UBICACION{calle:"Deán Funes",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:101}), (b:UBICACION{calle:"Deán Funes",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:102}), (b:UBICACION{calle:"Deán Funes",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:201}), (b:UBICACION{calle:"Deán Funes",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:202}), (b:UBICACION{calle:"Deán Funes",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:301}), (b:UBICACION{calle:"Deán Funes",numero:399}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:302}), (b:UBICACION{calle:"Deán Funes",numero:400}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'Tucumán', numero:1, latitud:-31.4146471, longitud:-64.1881333});
+MERGE (:UBICACION {calle:'Tucumán', numero:2, latitud:-31.4146618, longitud:-64.1879382});
+MERGE (:UBICACION {calle:'Tucumán', numero:99, latitud:-31.4138341, longitud:-64.1878177});
+MERGE (:UBICACION {calle:'Tucumán', numero:100, latitud:-31.4138390, longitud:-64.1875996});
+MERGE (:UBICACION {calle:'Tucumán', numero:101, latitud:-31.4134815, longitud:-64.1876455});
+MERGE (:UBICACION {calle:'Tucumán', numero:102, latitud:-31.4135893, longitud:-64.1874963});
+MERGE (:UBICACION {calle:'Tucumán', numero:199, latitud:-31.4126195, longitud:-64.1872897});
+MERGE (:UBICACION {calle:'Tucumán', numero:200, latitud:-31.4126587, longitud:-64.1870888});
+MERGE (:UBICACION {calle:'Tucumán', numero:201, latitud:-31.4122591, longitud:-64.1871269});
+MERGE (:UBICACION {calle:'Tucumán', numero:202, latitud:-31.4123179, longitud:-64.1869662});
+MERGE (:UBICACION {calle:'Tucumán', numero:299, latitud:-31.4114804, longitud:-64.1867998});
+MERGE (:UBICACION {calle:'Tucumán', numero:300, latitud:-31.4115538, longitud:-64.1866448});
+
+MATCH (a:UBICACION{calle:"Tucumán",numero:1}), (b:UBICACION{calle:"Tucumán",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:99}), (b:UBICACION{calle:"Tucumán",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:101}), (b:UBICACION{calle:"Tucumán",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:199}), (b:UBICACION{calle:"Tucumán",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:201}), (b:UBICACION{calle:"Tucumán",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:299}), (b:UBICACION{calle:"Tucumán",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Tucumán",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Tucumán",numero:1}), (b:UBICACION{calle:"Tucumán",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:2}), (b:UBICACION{calle:"Tucumán",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:101}), (b:UBICACION{calle:"Tucumán",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:102}), (b:UBICACION{calle:"Tucumán",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:201}), (b:UBICACION{calle:"Tucumán",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Tucumán",numero:202}), (b:UBICACION{calle:"Tucumán",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Deán Funes",numero:302}), (b:UBICACION{calle:"Tucumán",numero:1}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:300}), (b:UBICACION{calle:"Tucumán",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:301}), (b:UBICACION{calle:"Tucumán",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:299}), (b:UBICACION{calle:"Tucumán",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:302}), (b:UBICACION{calle:"Tucumán",numero:101}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:300}), (b:UBICACION{calle:"Tucumán",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:301}), (b:UBICACION{calle:"Tucumán",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:299}), (b:UBICACION{calle:"Tucumán",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:302}), (b:UBICACION{calle:"Tucumán",numero:201}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:300}), (b:UBICACION{calle:"Tucumán",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:301}), (b:UBICACION{calle:"Tucumán",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:299}), (b:UBICACION{calle:"Tucumán",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:2, latitud:-31.4151485, longitud:-64.1866046});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:1, latitud:-31.4150355, longitud:-64.1867824});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:99, latitud:-31.4141473, longitud:-64.1864187});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:100, latitud:-31.4142084, longitud:-64.1861969});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:102, latitud:-31.4139581, longitud:-64.1861075});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:101, latitud:-31.4139007, longitud:-64.1863043});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:200, latitud:-31.4130332, longitud:-64.1857212});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:199, latitud:-31.4130116, longitud:-64.1859253});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:202, latitud:-31.4127799, longitud:-64.1856032});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:201, latitud:-31.4126486, longitud:-64.1857856});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:300, latitud:-31.4119466, longitud:-64.1852527});
+MERGE (:UBICACION {calle:'Avenida General Paz', numero:299, latitud:-31.4118857, longitud:-64.1854508});
+
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:1}), (b:UBICACION{calle:"Avenida General Paz",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:99}), (b:UBICACION{calle:"Avenida General Paz",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:101}), (b:UBICACION{calle:"Avenida General Paz",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:199}), (b:UBICACION{calle:"Avenida General Paz",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:201}), (b:UBICACION{calle:"Avenida General Paz",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:299}), (b:UBICACION{calle:"Avenida General Paz",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Senda peatonal",atraviesa:"Avenida General Paz",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:1}), (b:UBICACION{calle:"Avenida General Paz",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:2}), (b:UBICACION{calle:"Avenida General Paz",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:102}), (b:UBICACION{calle:"Avenida General Paz",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:101}), (b:UBICACION{calle:"Avenida General Paz",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:201}), (b:UBICACION{calle:"Avenida General Paz",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida General Paz",numero:202}), (b:UBICACION{calle:"Avenida General Paz",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Deán Funes",numero:202}), (b:UBICACION{calle:"Avenida General Paz",numero:1}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:200}), (b:UBICACION{calle:"Avenida General Paz",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:201}), (b:UBICACION{calle:"Avenida General Paz",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:199}), (b:UBICACION{calle:"Avenida General Paz",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:202}), (b:UBICACION{calle:"Avenida General Paz",numero:101}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:200}), (b:UBICACION{calle:"Avenida General Paz",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:201}), (b:UBICACION{calle:"Avenida General Paz",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:199}), (b:UBICACION{calle:"Avenida General Paz",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:200}), (b:UBICACION{calle:"Avenida General Paz",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:202}), (b:UBICACION{calle:"Avenida General Paz",numero:201}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:201}), (b:UBICACION{calle:"Avenida General Paz",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:199}), (b:UBICACION{calle:"Avenida General Paz",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:1, latitud:-31.4154928, longitud:-64.1853847});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:2, latitud:-31.4155416, longitud:-64.1852273});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:99, latitud:-31.4145161, longitud:-64.1850091});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:100, latitud:-31.4146015, longitud:-64.1848232});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:101, latitud:-31.4142991, longitud:-64.1848653});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:102, latitud:-31.4143508, longitud:-64.1847136});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:199, latitud:-31.4134487, longitud:-64.1845112});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:200, latitud:-31.4134919, longitud:-64.1843646});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:201, latitud:-31.4131077, longitud:-64.1843747});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:202, latitud:-31.4131508, longitud:-64.1841926});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:299, latitud:-31.4122961, longitud:-64.1840409});
+MERGE (:UBICACION {calle:'Rivera Indarte', numero:300, latitud:-31.4123911, longitud:-64.1838638});
+
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:1}), (b:UBICACION{calle:"Rivera Indarte",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:99}), (b:UBICACION{calle:"Rivera Indarte",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:101}), (b:UBICACION{calle:"Rivera Indarte",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:199}), (b:UBICACION{calle:"Rivera Indarte",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:201}), (b:UBICACION{calle:"Rivera Indarte",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte",numero:299}), (b:UBICACION{calle:"Rivera Indarte",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",atraviesa:"Rivera Indarte",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:1}), (b:UBICACION{calle:"Rivera Indarte",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:2}), (b:UBICACION{calle:"Rivera Indarte",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:101}), (b:UBICACION{calle:"Rivera Indarte",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:102}), (b:UBICACION{calle:"Rivera Indarte",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:201}), (b:UBICACION{calle:"Rivera Indarte",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Rivera Indarte", numero:202}), (b:UBICACION{calle:"Rivera Indarte",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Peatonal",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+MATCH (a:UBICACION{calle:"Deán Funes",numero:102}), (b:UBICACION{calle:"Rivera Indarte",numero:1}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Deán Funes",numero:100}), (b:UBICACION{calle:"Rivera Indarte",numero:2}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:99}), (b:UBICACION{calle:"Rivera Indarte",numero:100}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:101}), (b:UBICACION{calle:"Rivera Indarte",numero:99}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:102}), (b:UBICACION{calle:"Rivera Indarte",numero:101}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"9 de Julio",numero:100}), (b:UBICACION{calle:"Rivera Indarte",numero:102}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:101}), (b:UBICACION{calle:"Rivera Indarte",numero:199}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:99}), (b:UBICACION{calle:"Rivera Indarte",numero:200}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:102}), (b:UBICACION{calle:"Rivera Indarte",numero:201}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Avenida Colón",numero:100}), (b:UBICACION{calle:"Rivera Indarte",numero:202}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:101}), (b:UBICACION{calle:"Rivera Indarte",numero:299}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+MATCH (a:UBICACION{calle:"Santa Rosa",numero:99}), (b:UBICACION{calle:"Rivera Indarte",numero:300}) MERGE (a)-[:CAMINO{peso:1,distancia:0,tipo:"Vereda",rampa:true,bloqueo:false,senda_demarcada:true,alerta_auditiva:false,estado:true,podotactil:false}]->(b);
+
+---------------------------------------------------------------------------------
+
+
+(Setear los hitos en 0)
+
+
+MATCH ()-[r]->() REMOVE r.alerta_auditiva, r.bloqueo, r.estado, r.podotactil, r.rampa, r.senda_demarcada, r.peso, r.atraviesa;
+MATCH ()-[r]->() SET r.alertaAuditiva_existe=false, r.bloqueo_existe=false, r.malEstado_existe=false, r.podotactil_existe=false, r.faltaRampa_existe=false, r.faltaSenda_existe=false;
+MATCH ()-[r]->() SET r.alertaAuditiva_coeficiente=1, r.bloqueo_coeficiente=1, r.malEstado_coeficiente=1, r.podotactil_coeficiente=1, r.faltaRampa_coeficiente=1, r.faltaSenda_coeficiente=1, r.tipo_coeficiente=1;
+MATCH ()-[r]->() SET r.alertaAuditiva_recuentoVotos=0, r.bloqueo_recuentoVotos=0, r.malEstado_recuentoVotos=0, r.podotactil_recuentoVotos=0, r.faltaRampa_recuentoVotos=0, r.faltaSenda_recuentoVotos=0;
+MATCH ()-[r]->() SET r.alertaAuditiva_idUsuariosVotosPositivos=[], r.bloqueo_idUsuariosVotosPositivos=[], r.malEstado_idUsuariosVotosPositivos=[], r.podotactil_idUsuariosVotosPositivos=[], r.faltaRampa_idUsuariosVotosPositivos=[], r.faltaSenda_idUsuariosVotosPositivos=[];
+MATCH ()-[r]->() SET r.alertaAuditiva_idUsuariosVotosNegativos=[], r.bloqueo_idUsuariosVotosNegativos=[], r.malEstado_idUsuariosVotosNegativos=[], r.podotactil_idUsuariosVotosNegativos=[], r.faltaRampa_idUsuariosVotosNegativos=[], r.faltaSenda_idUsuariosVotosNegativos=[];
+MATCH ()-[r]->() SET r.alertaAuditiva_idUsuarioReporte=[], r.bloqueo_idUsuarioReporte=[], r.malEstado_idUsuarioReporte=[], r.podotactil_idUsuarioReporte=[], r.faltaRampa_idUsuarioReporte=[], r.faltaSenda_idUsuarioReporte=[];
+MATCH ()-[r]->() SET r.alertaAuditiva_idUsuarioReporte=0, r.bloqueo_idUsuarioReporte=0, r.faltaRampa_idUsuarioReporte=0, r.faltaSenda_idUsuarioReporte=0, r.malEstado_idUsuarioReporte=0, r.podotactil_idUsuarioReporte=0;
+
+---------------------------------------------------------------------------------
+
+
+(Calculo distancias)
+
+
+MATCH (n1:UBICACION)-[c:CAMINO]->(n2:UBICACION) WITH *, type(c) AS camino, point({longitude:n1.longitud,latitude:n1.latitud, height:0}) AS p1, point({longitude:n2.longitud,latitude:n2.latitud,height:0}) AS p2 SET c.distancia=round(point.distance(p1,p2));
+
+
+---------------------------------------------------------------------------------
+
+
+(Se setean los nexos dependiendo de las distancias calculadas)
+
+
+MATCH (m:UBICACION)-[r:CAMINO]->(n:UBICACION) WHERE r.tipo="Peatonal" AND r.distancia<30 SET r.tipo="Nexo peatonal";
+MATCH (m:UBICACION)-[r:CAMINO]->(n:UBICACION) WHERE r.tipo="Vereda" AND r.distancia<30 SET r.tipo="Nexo vereda";
+
+---------------------------------------------------------------------------------
+
+
+(Cambio de tipo para todos los userId)
+
+
+MATCH ()-[r]->() SET
+r.alertaAuditiva_idUsuarioReporte="", r.alertaAuditiva_idUsuariosVotosNegativos=[], r.alertaAuditiva_idUsuariosVotosPositivos=[], r.malEstado_idUsuarioReporte="", r.malEstado_idUsuariosVotosNegativos=[], r.malEstado_idUsuariosVotosPositivos=[], r.bloqueo_idUsuarioReporte="", r.bloqueo_idUsuariosVotosNegativos=[], r.bloqueo_idUsuariosVotosPositivos=[], r.faltaRampa_idUsuarioReporte="", r.faltaRampa_idUsuariosVotosNegativos=[], r.faltaRampa_idUsuariosVotosPositivos=[], r.podotactil_idUsuarioReporte="", r.podotactil_idUsuariosVotosNegativos=[], r.podotactil_idUsuariosVotosPositivos=[], r.faltaSenda_idUsuarioReporte="", r.faltaSenda_idUsuariosVotosNegativos=[], r.faltaSenda_idUsuariosVotosPositivos=[];
+
+---------------------------------------------------------------------------------
+
+
+(Se setean los coeficientes según el tipo de camino)
+
+
+MATCH ()-[r]->() WHERE r.tipo="Vereda" SET r.tipo_coeficiente=1;
+MATCH ()-[r]->() WHERE r.tipo="Nexo vereda" SET r.tipo_coeficiente=1;
+MATCH ()-[r]->() WHERE r.tipo="Nexo peatonal" SET r.tipo_coeficiente=0.8;
+MATCH ()-[r]->() WHERE r.tipo="Peatonal" SET r.tipo_coeficiente=0.8;
+MATCH ()-[r]->() WHERE r.tipo="Senda peatonal" SET r.tipo_coeficiente=3;
+
+---------------------------------------------------------------------------------
+
+
+(Se calculan los pesos segun los coeficientes)
+
+
+MATCH ()-[r]->() SET r.peso_motriz=r.distancia*r.tipo_coeficiente*r.bloqueo_coeficiente*r.malEstado_coeficiente*r.faltaRampa_coeficiente*r.faltaSenda_coeficiente;
+MATCH ()-[r]->() SET r.peso=r.distancia*r.tipo_coeficiente*r.bloqueo_coeficiente*r.malEstado_coeficiente*r.faltaSenda_coeficiente;
+MATCH ()-[r]->() SET r.peso_vision=r.distancia*r.tipo_coeficiente*r.alertaAuditiva_coeficiente*r.bloqueo_coeficiente*r.malEstado_coeficiente*r.podotactil_coeficiente*r.faltaSenda_coeficiente;
+
+---------------------------------------------------------------------------------
+
+
+(se calculan los centros de los caminos)
+
+
+MATCH (m)-[r]->(n) SET r.centroCamino_latitud=(m.latitud+n.latitud)/2, r.centroCamino_longitud=(m.longitud+n.longitud)/2 RETURN m, n, r
+
+
+
+
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
+CALCULOS DE RUTA OPTIMA
+
+* Chequeo si existen los grafos:
+
+
+CALL gds.graph.list() YIELD graphName;
+
+
+* Si existen, los borro antes de calcular la ruta, para actualizar los pesos:
+
+
+CALL gds.graph.drop('grafo');
+CALL gds.graph.drop('grafo-motriz');
+CALL gds.graph.drop('grafo-vision');
+
+
+* Creo los grafos:
+
+
+CALL gds.graph.project('grafo-motriz','UBICACION',{CAMINO:{orientation: 'UNDIRECTED'}},{relationshipProperties: 'peso_motriz'});
+CALL gds.graph.project('grafo','UBICACION',{CAMINO:{orientation: 'UNDIRECTED'}},{relationshipProperties: 'peso'});
+CALL gds.graph.project('grafo-vision','UBICACION',{CAMINO:{orientation: 'UNDIRECTED'}},{relationshipProperties: 'peso_vision'});
+
+
+* Calculo la ruta dependiendo del perfil:
+
+
+MATCH (target:UBICACION {calle: 'Deán Funes',numero:400}), (source:UBICACION {calle: 'Rivera Indarte',numero:300})
+CALL gds.shortestPath.dijkstra.stream('grafo-motriz', {sourceNode: source,targetNode: target,relationshipWeightProperty: 'peso_motriz'})
+YIELD path RETURN nodes(path) as path
+
+MATCH (target:UBICACION {calle: 'Deán Funes',numero:400}), (source:UBICACION {calle: 'Rivera Indarte',numero:300})
+CALL gds.shortestPath.dijkstra.stream('grafo', {sourceNode: source,targetNode: target,relationshipWeightProperty: 'peso'})
+YIELD path RETURN nodes(path) as path
+
+MATCH (target:UBICACION {calle: 'Deán Funes',numero:400}), (source:UBICACION {calle: 'Rivera Indarte',numero:300})
+CALL gds.shortestPath.dijkstra.stream('grafo-vision', {sourceNode: source,targetNode: target,relationshipWeightProperty: 'peso_vision'})
+YIELD path RETURN nodes(path) as path

@@ -1,0 +1,175 @@
+.home-div-container {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.options-button {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #212529 !important;
+    border-top-color: #212529 !important;
+    border-bottom-color: #212529 !important;
+    border-right-color: #212529 !important;
+    border-left-color: #212529 !important;
+}
+
+.options-button:hover {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: white !important;
+    color: #212529 !important;
+    border-top-color: #212529 !important;
+    border-bottom-color: #212529 !important;
+    border-right-color: #212529 !important;
+    border-left-color: #212529 !important;
+    transform: scale(1.1);
+}
+
+.options-icon {
+    transform: scale(2);
+}
+
+.summary-button {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: tomato !important;
+    border-top-color: tomato !important;
+    border-bottom-color: tomato !important;
+    border-right-color: tomato !important;
+    border-left-color: tomato !important;
+}
+
+.summary-button:hover {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: white !important;
+    color: tomato !important;
+    border-top-color: tomato !important;
+    border-bottom-color: tomato !important;
+    border-right-color: tomato !important;
+    border-left-color: tomato !important;
+    transform: scale(1.1);
+}
+
+.summary-icon {
+    transform: scale(1.7);
+}
+
+.report-button {
+    position: absolute;
+    bottom: 6.5em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: orange !important;
+    border-top-color: orange !important;
+    border-bottom-color: orange !important;
+    border-right-color: orange !important;
+    border-left-color: orange !important;
+}
+
+.report-button:hover {
+    position: absolute;
+    bottom: 6.5em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: white !important;
+    color: orange !important;
+    border-top-color: orange !important;
+    border-bottom-color: orange !important;
+    border-right-color: orange !important;
+    border-left-color: orange !important;
+    transform: scale(1.1);
+}
+
+.report-icon {
+    transform: scale(1.6);
+}
+
+
+.shortest-path-button {
+    position: absolute;
+    bottom: 12em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: MediumSeaGreen !important;
+    border-top-color: MediumSeaGreen !important;
+    border-bottom-color: MediumSeaGreen !important;
+    border-right-color: MediumSeaGreen !important;
+    border-left-color: MediumSeaGreen !important;
+}
+
+.shortest-path-button:hover {
+    position: absolute;
+    bottom: 12em;
+    right: 1em;
+    z-index: 1000;
+    border-radius: 100% !important;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex !important; 
+    justify-content: center; 
+    align-items: center;
+    background-color: white !important;
+    color: MediumSeaGreen !important;
+    border-top-color: MediumSeaGreen !important;
+    border-bottom-color: MediumSeaGreen !important;
+    border-right-color: MediumSeaGreen !important;
+    border-left-color: MediumSeaGreen !important;
+    transform: scale(1.1);
+}
+
+.shortest-path-icon {
+    transform: scale(1.8);
+}

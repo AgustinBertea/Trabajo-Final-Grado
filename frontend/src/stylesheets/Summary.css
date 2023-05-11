@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url('https://fonts.cdnfonts.com/s/6/68-Courier-New.ttf');
+}
+
+.summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.summary-div {
+    background-color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.summary-content {
+    height: 20em; 
+    overflow: auto;
+}

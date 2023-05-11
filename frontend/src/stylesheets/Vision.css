@@ -1,0 +1,53 @@
+.btn-mic {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mic:active {
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+}
+
+.btn-mic .listening {
+    display: none;
+}
+
+.btn-mic:active .listening {
+    display: block;
+    color: white;
+    filter: brightness(300%) blur(0.7px);
+}
+
+.btn-mic .quiet {
+    display: block;
+}
+
+.btn-mic:active .quiet {
+    display: none;
+}
+
+
+.btn-mic .mic-icon {
+    transform: scale(4);
+    filter: brightness(300%) blur(0.15px);
+}
+
+.btn-mic:active .mic-icon {
+    transform: scale(4);
+    filter: brightness(300%) blur(0.15px);
+}
+
+.btn-mic .fill-icon {
+    transform: scale(4);
+}
+
+.btn-mic:active .fill-icon {
+    display: none;
+    transform: scale(4);
+}
+
+.transcript {
+    font-family: cursive;
+}

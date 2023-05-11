@@ -1,0 +1,11 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: auth-user-service
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/tfg-siglo21-db
+      auto-index-creation: true
+jwt:
+  secret: secret
